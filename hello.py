@@ -20,7 +20,7 @@ def index():
 def user(name):
     return render_template("user.html", user_name=name)
 
-#create custom error pages
+#create custom error page
 
 #Invalid URL
 @app.errorhandler(404)
