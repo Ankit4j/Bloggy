@@ -1,0 +1,23 @@
+<h1>Hello World!</h1>
+
+
+<p>This is my first webpage</p>
+
+<p>My name is {{ first_name }}</p>
+
+<p>{{ stuff|title }}</p>
+
+<h3>Favourite Colour</h3>
+{% for colour in favourite_colour %}
+    {% if colour == 26 %}
+        {{ colour+ 100 }}
+    {% else %}
+        {{ colour }}<br/>
+    {% endif %}
+    
+{% endfor %}
+
+
+<br/><br/>
+
+{{ favourite_colour|reverse }}
